@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @days.each do |day| %>
+    <div class="content_post" style="background-image: url(<%= day.image %>);">
+      <p><%= day.text %></p>
+      <span class="name">
+        <%= day.name %>
+      </span>
+    </div>
+  <% end %>
+</div>
